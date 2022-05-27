@@ -1,0 +1,108 @@
+@import "variables";
+
+.main{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    .logo{
+        margin: 45px 0 0 58px;
+    }
+}
+section.banner{
+    width: 100%;
+    max-height: 709px;
+    height: 100vh;
+    background: url("/images/banner-bg.png") no-repeat bottom right;
+    .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .banner-cnt{           
+            h1{
+                margin-bottom: 45px;
+                max-width: 793px;
+            }      
+            .p-text{
+                margin-bottom: 53px;
+                max-width: 498px;
+            }
+        }       
+    }
+}
+section.testimonials{
+    padding: 145px 0 104px 0;
+    .testimonial-in{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .testimonial-words{
+            flex: 2;
+            .p-text{
+                max-width: 577px;
+                margin-top: 36px;
+                display:block;
+            }  
+            .testi-profile{
+                display: flex;
+                margin-top: 55px;
+                flex-direction: row;
+                align-items: flex-end;
+                .profile-dp{
+                    width: 115px;
+                    height: 115px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+                .profile-texts{
+                    margin-left: 20px;
+                    max-width: 337px;
+                    line-height: 30px;
+                    .name{
+                        font-weight: 700;
+                        font-size: 24px;
+                        display: block;
+                    }
+                    .designation{
+                        font-weight: 400;
+                        font-size: 18px;
+
+                    }
+                }
+            }  
+        } 
+        .testimonial-image{
+            flex: 1;
+        }       
+    }
+}
+footer{
+    background: $fontcolor;
+    padding:71px 62px 62px 56px;
+    .footer-in{
+        display: flex;
+        justify-content: space-between;
+        color: $white;
+        .copy-right{
+            font-size: 21px;
+            font-weight: 400;
+        }
+        .contacts{
+            max-width: 244px;
+            
+            p.p-text{
+                text-align: right;
+                font-size: 21px;
+                line-height: 28px;
+                font-weight: 400;
+                &:last-of-type{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

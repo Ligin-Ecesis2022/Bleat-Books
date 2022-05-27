@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+//colors
+$primarycolor:#F7D54D;
+$secondarycolor:#1F2A44;
+
+$white:#fff;
+$fontcolor:#212A42;
+$black:#000;
+$lightgrey:#FBF9F2;
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+}
+.section-head{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 78px;
+    color: $secondarycolor ;
+    display: block;
+    text-align: center;
+}
+.p-text{
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 400;
+}
+
+
+.bleat-btn{
+    width: 218px;
+    height: 65px;
+    background: #F7D54D;
+    color: $black;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 48px;
+    border: none;
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+		margin:0 auto;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 900px;
+		margin:0 auto;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1060px;
+		margin:0 auto;
+    }
+}
+@media (min-width: 1360px) {
+     .container {
+         max-width: 1120px;
+		 margin:0 auto;
+    }
+}
+@media (min-width: 1440px) {
+     .container {
+         max-width: 1200px;
+		 margin:0 auto;
+    }
+
+}
+
