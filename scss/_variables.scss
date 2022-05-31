@@ -14,7 +14,9 @@ $lightgrey:#FBF9F2;
 body{
     font-family: 'Montserrat', sans-serif;
 }
-
+img{
+    width: 100%;
+}
 h1{
     font-size: 64px;
     font-weight: 700;
@@ -45,6 +47,7 @@ h1{
     line-height: 48px;
     border: none;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
 
