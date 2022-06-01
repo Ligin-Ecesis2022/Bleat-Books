@@ -30,6 +30,10 @@
                     </p>
                     <button class="bleat-btn">LEt’s TALK</button>
                 </div>
+                <div class="banner-image">
+                    <img src="images/banner-bg.png" alt="banner-image">
+                    <button class="bleat-btn">LEt’s TALK</button>
+                </div>
             </div>
         </section>
         <section class="testimonials">
@@ -66,44 +70,72 @@
             <div class="container">
                 <h2 class="section-head">How it works</h2>
                 <div class="works-accordian">
-                    <div class="accordian-image">
-                        <div class="image-only">
-                            <img src="images/Ellipse 22.png" alt="">
+                    <div class="accordian-image" id="imagecontainer">
+                        <div class="image-only" id="1" data-active="active">
+                            <img src="images/big-scan.png" alt=""  >
                         </div>
+                        <div class="image-only" id="2" >
+                            <img src="images/big-scan.png" alt=""  >
+                        </div>
+                        <div class="image-only" id="3" >
+                            <img src="images/big-scan.png" alt=""  >
+                        </div>
+                        <div class="image-only" id="4" >
+                            <img src="images/big-scan.png" alt=""  >
+                        </div>
+                        <div class="image-only" id="5" >
+                            <img src="images/big-scan.png" alt=""  >
+                        </div>
+                        
                     </div>
                     <div class="accordian-content">
-                        <div class="accordian-tabs">
-                            <div class="accordian tab1 " id="tab1">
-                                <div class="accordian-title">1.  Scan and engage</div>
+                        <div class="accordian-tabs" id="accordianTabs" >
+                            <div class="accordian" data-image="1" >
+                                <div class="accordian-item-img">
+                                    <img src="images/scan-img.png" alt=" scan image">
+                                </div>
+                                <div class="accordian-title" >1.  Scan and engage</div>
                                 <div class="accordian-text">
 
                                     <p>Let prospects judge your book by its code - QR code. Don’t let your readers glance and leave. Let them engage right away!
                                     </p>
                                 </div>
                             </div>
-                            <div class="accordian tab2 " id="tab2">
-                                <div class="accordian-title">2.  SHOW THEN TELL</div>
+                            <div class="accordian " data-image="2" >
+                                <div class="accordian-item-img">
+                                    <img src="images/show.png" alt=" scan image">
+                                </div>
+                                <div class="accordian-title" >2.  SHOW THEN TELL</div>
                                 <div class="accordian-text">
                                     <p>Let prospects judge your book by its code - QR code. Don’t let your readers glance and leave. Let them engage right away!
                                     </p>
                                 </div>
                             </div>
-                            <div class="accordian tab3" id="tab3">
-                                <div class="accordian-title">3.  ENGAGE THEN BUY</div>
+                            <div class="accordian " data-image="3" >
+                                <div class="accordian-item-img">
+                                    <img src="images/tell.png" alt=" scan image">
+                                </div>
+                                <div class="accordian-title" >3.  ENGAGE THEN BUY</div>
                                 <div class="accordian-text">
                                     <p>Let prospects judge your book by its code - QR code. Don’t let your readers glance and leave. Let them engage right away!
                                     </p>
                                 </div>
                             </div>
-                            <div class="accordian tab4" id="tab4">
-                                <div class="accordian-title">4.  OFFER TIMELY RESOURCES</div>
+                            <div class="accordian tab4" data-image="4">
+                                <div class="accordian-item-img">
+                                    <img src="images/engage.png" alt=" scan image">
+                                </div>
+                                <div class="accordian-title"  >4.  OFFER TIMELY RESOURCES</div>
                                 <div class="accordian-text">
                                     <p>Let prospects judge your book by its code - QR code. Don’t let your readers glance and leave. Let them engage right away!
                                     </p>
                                 </div>
                             </div>
-                            <div class="accordian tab4" id="tab4">
-                                <div class="accordian-title">5.  MONITOR AND MEASURE</div>
+                            <div class="accordian" data-image="5">
+                                <div class="accordian-item-img">
+                                    <img src="images/monitor.png" alt=" scan image">
+                                </div>
+                                <div class="accordian-title"  >5.  MONITOR AND MEASURE</div>
                                 <div class="accordian-text">
                                     <p>Let prospects judge your book by its code - QR code. Don’t let your readers glance and leave. Let them engage right away!
                                     </p>
@@ -150,9 +182,11 @@
                 <div class="price-types">
                     <div class="price-box">
                         <div class="price-box-in">
-                            <span class="sub-title">Fact</span>
-                            <div class="section-head">$999</div>
-                            <div class="item-features">
+                            <div class="price-head">
+                                <span class="sub-title">Fact</span>
+                                <div class="section-head">$999</div>
+                            </div>
+                            <div class="item-features" >
                                 <ul>
                                     <li>Optimized landing page</li>
                                     <li>Engaging assessment</li>
@@ -168,8 +202,10 @@
                     <div class="price-box popular">
                         <div class="price-box-in">
                             <div class="special-tag">MOST POPULAR</div>
-                            <span class="sub-title">Fiction</span>
-                            <div class="section-head">$2,999</div>
+                            <div class="price-head">
+                                <span class="sub-title">Fiction</span>
+                                <div class="section-head">$2,999</div>
+                            </div>                            
                             <div class="item-features">
                                 <ul>
                                     <li>Optimized landing page</li>
@@ -186,8 +222,10 @@
                     </div>
                     <div class="price-box">
                         <div class="price-box-in">
-                            <span class="sub-title">Fantasy</span>
-                            <div class="section-head">$5,999</div>
+                            <div class="price-head">
+                                <span class="sub-title">Fantasy</span>
+                                <div class="section-head">$5,999</div>
+                            </div>                            
                             <div class="item-features">
                                 <ul>
                                     <li>Optimized landing page</li>
@@ -200,8 +238,10 @@
                             </div>
                             <button class="bleat-btn">LET’s TALK</button>
                         </div>                        
-                    </div>                    
+                    </div>  
+                                     
                 </div>
+                <div class="bleat-btn"><a href="#">LEt’s TALK</a> </div>
             </div>
         </section>
         <section class="testimonials">

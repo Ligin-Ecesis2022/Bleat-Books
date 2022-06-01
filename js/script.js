@@ -1,11 +1,21 @@
-// $(document).ready(function() {
-//     $(".accordian-title").click(function(){
-//         $(this).parent('.accordian').toggleClass('open');
-//         // $(".accordian").siblings().hasClass("open").remove;
-//     }); 
+    var controlsContainer = document.getElementById('accordianTabs')
+    var allImages = document.querySelectorAll('.image-only')
+    var imagesContainer = document.getElementById('imagecontainer');
+    
 
-// });
-
+    accordianTabs.onclick = function(e){
+        
+  var target = e.target,
+    dataTarget = target.getAttribute('data-image'),      
+    activeImage = document.getElementById(dataTarget);
+    // console.log(dataTarget);        
+  if(dataTarget){
+    for( var i = 0; i < allImages.length; i++){
+    allImages[i].removeAttribute('data-active');    
+  } 
+  activeImage.setAttribute('data-active', 'active');
+  }  
+}
 
 
 $(function() {
@@ -36,4 +46,4 @@ $(function() {
 });
 
 
-  
+//  controlsContainer = document.getElementById('controls-container'),
