@@ -29,6 +29,10 @@ h1{
         font-size: 40px;
         line-height: 48px;
     }
+    @media(max-width:680px){
+        font-size: 32px;
+        line-height: 48px;        
+    }
 }
 .section-head{
     font-size: 48px;
@@ -47,6 +51,10 @@ h1{
     font-size: 24px;
     line-height: 48px;
     font-weight: 400;
+    @media(max-width:680px){
+        font-size: 18px;
+        line-height: 36px;
+    }
 }
 
 
