@@ -21,6 +21,16 @@ h1{
     font-size: 64px;
     font-weight: 700;
     line-height: 78px;
+    font-family: 'Butler';
+    color: $secondarycolor;
+    @media(max-width:1439px){
+        font-size: 55px;
+        line-height: 65px;
+    }
+    @media(max-width:1199px){
+        font-size: 50px;
+        line-height: 60px;
+    }
     @media(max-width:991px){
         font-size: 48px;
         line-height: 55px;
@@ -41,6 +51,7 @@ h1{
     color: $secondarycolor ;
     display: block;
     text-align: center;
+    font-family: 'Butler';
     @media(max-width:991px){
         font-size: 35px;
         line-height: 60px;
@@ -68,7 +79,8 @@ h1{
     line-height: 48px;
     border: none;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 2px;
+    letter-spacing: 2px;
 }
 
 
@@ -115,3 +127,39 @@ h1{
 
 }
 
+
+//fonts
+
+@font-face {
+    font-family: 'Butler';
+    src: url('../fonts/Butler-Bold.woff2') format('woff2'),
+        url('../fonts/Butler-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Butler';
+    src: url('../fonts/Butler-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Butler-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url('../fonts/ButlerStencil-Bold.woff2') format('woff2'),
+        url('../fonts/Butler-ExtraBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Butler Stencil';
+    src: url('../fonts/ButlerStencil-ExtraBold.woff2') format('woff2'),
+        url('../fonts/ButlerStencil-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}

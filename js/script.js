@@ -4,6 +4,8 @@
 
 function setImage(id)
 {
+
+    
     allImages = document.querySelectorAll(".image-only");
 
     for (var i = 0; i < allImages.length; i++) {
@@ -11,8 +13,9 @@ function setImage(id)
       }
 
     activeImage = document.getElementById(id);
-
-    activeImage.setAttribute("data-active", "active");
+    setTimeout(function (){
+        activeImage.setAttribute("data-active", "active");
+    }, 50);
 }
 
 $(function() {

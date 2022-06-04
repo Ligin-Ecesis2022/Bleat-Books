@@ -28,27 +28,27 @@ header{
 }
 section.banner{
     width: 100%;
-    max-height: 709px;
+    max-height: 628px;
     height: 100vh;
-    background: url("../images/banner-bg.png") no-repeat bottom right;
-    background-size: contain;
-    margin-top: 155px;
-
+    background: url("../images/banner-bg.png") no-repeat bottom right;    
+    padding-top: 153px;
     @media(max-width:1200px){
         max-height: unset;
         height: auto;
-        margin-top: 100px;
+        padding-top: 100px;
+        background-size: contain;
     }
     @media(max-width:991px){
         background: none;
+        padding-bottom:111px;
     }
     @media(max-width:767px){
-        margin-top: 90px;
+        padding-top: 90px;
     }
     .container{
         height: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         @media(max-width:991px){
             flex-direction: column;
         }
@@ -58,17 +58,21 @@ section.banner{
             }
             h1{
                 margin-bottom: 45px;
-                max-width: 793px;
+                max-width: 673px;
                 @media(max-width:1439px){
                     max-width: 600px;
                 }
                 @media(max-width:991px){
-                    max-width: 600px;
+                    max-width:520px;
                     margin-bottom: 35px;
-                }
+                } 
+                @media(max-width:767px){
+                    max-width:440px;
+                    margin-bottom: 35px;
+                }               
                 @media(max-width:680px){
-                    max-width: 510px;
-                    margin-bottom: 29px;
+                    max-width: 340px;
+                    margin-bottom: 20px;
                 }
             }      
             .p-text{
@@ -77,6 +81,9 @@ section.banner{
                 @media(max-width:991px){
                     max-width: 440px;
                     margin-bottom: 38px;
+                }
+                @media(max-width:767px){
+                    line-height: 40px;
                 }
                 @media(max-width:680px){
                     font-size: 18px;
@@ -103,6 +110,7 @@ section.banner{
     }
 }
 section.testimonials{
+    background: #fcf9f4;
     padding: 145px 0 104px 0;
     @media(max-width:680px){
         padding:  81px 0 172px 0;
@@ -112,7 +120,7 @@ section.testimonials{
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 0 87px;
+        padding: 0 0 0 87px;
         @media(max-width:1366px){
             padding: 0;
         }
@@ -120,7 +128,7 @@ section.testimonials{
             flex-direction: column;
         }
         .testimonial-words{
-            flex: 2;
+            // flex: 2;
             @media(max-width:575px){
                 max-width: 330px;
                 margin: 0 auto;
@@ -135,7 +143,7 @@ section.testimonials{
             }  
             .testi-profile{
                 display: flex;
-                margin-top: 55px;
+                margin-top: 37px;
                 flex-direction: row;
                 align-items: flex-end;
                 @media(max-width:991px){
@@ -152,6 +160,7 @@ section.testimonials{
                     margin-left: 20px;
                     max-width: 377px;
                     line-height: 30px;
+                    
                     @media(max-width:991px){
                         text-align: center;
                         margin-top: 15px;
@@ -160,6 +169,7 @@ section.testimonials{
                         font-weight: 700;
                         font-size: 24px;
                         display: block;
+                        font-family: 'Butler';
                         @media(max-width:680px){
                             font-size: 18px;
                         }
@@ -179,7 +189,7 @@ section.testimonials{
             }  
         } 
         .testimonial-image{
-            flex: 1;
+            // flex: 1;
             // img{
             //     padding-left: 74px;
             // }
@@ -195,9 +205,22 @@ section.testimonials{
 section.first-test{
     .testimonial-in{
         .testimonial-image{
-            margin-left: 85px;
+            // margin-left: 85px;
         }
     }
+}
+section.second-test{
+    padding: 120px 0 140px 0;
+    .testimonial-in{
+        justify-content: flex-start;
+        align-items: flex-start;
+        .testimonial-image{
+            padding: 0 0 0 30px;
+        }
+    }
+}
+section.thrid-test{
+    background: #fff;
 }
 footer{
     background: $fontcolor;
@@ -228,6 +251,7 @@ footer{
         .copy-right{
             font-size: 21px;
             font-weight: 400;
+            margin-top: 21px;
             @media(max-width:767px){
                 margin-bottom: 46px;
             }
@@ -240,6 +264,7 @@ footer{
                 font-size: 21px;
                 line-height: 28px;
                 font-weight: 400;
+                color: $white;
                 @media(max-width:767px){
                     text-align: left;
                 }
@@ -290,7 +315,7 @@ footer{
                 visibility: hidden;
                 transition: all .5s linear;
                 display: none;
-                opacity: 0;
+                
             }
             .image-only[data-active="active"]{
                 opacity: 1;
@@ -491,7 +516,9 @@ footer{
             border-radius: 15px;            
             max-width: 380px;
             min-width: 380px;
-            display: inline-block;            
+            display: inline-block;   
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            overflow: hidden;         
             @media(max-width:1359px){
                 max-width: 350px;
                 min-width: 350px;
@@ -500,9 +527,11 @@ footer{
                 background: unset;
                 max-width: unset;
                 min-width: unset;
+                box-shadow: none;
             }
             .price-box-in{
                 padding: 51px 0 43px 44px;
+                
                 @media(max-width:1359px){
                     padding: 51px 0 43px 30px;
                 }
@@ -547,10 +576,13 @@ footer{
                         }                     
                     }
                     .section-head{
+                        font-family: 'Montserrat', sans-serif;
+                        letter-spacing: 2px;
                         @media(max-width:1199px){
                             color: $white;
                             text-align: center;
                             font-size: 28px;
+                            line-height: 50px;
                         }
                         @media(max-width:767px){
                             font-size: 24px;
@@ -568,6 +600,7 @@ footer{
                     color: $fontcolor;
                     font-weight: 700;
                     text-transform: uppercase;
+                    letter-spacing: 2px;
                 }
                 .section-head{
                     text-align: left;
@@ -595,6 +628,7 @@ footer{
                             color: $fontcolor;
                             position: relative;
                             padding-left: 36px;
+                            letter-spacing: .1px;
                             @media(max-width:575px){
                                 font-size: 18px;
                                 line-height: 24px;
@@ -709,7 +743,7 @@ footer{
             margin-top: -42px;
             z-index: 100;
             transform: translate(-50%, 0);
-            @media(max-width:1359px){
+            @media(max-width:1439px){
                 min-width: 370px;
                 max-width: 370px;
             }
@@ -724,8 +758,8 @@ footer{
             }
             .price-box-in{
                 padding: 17px 0 84px 70px;
-                @media(max-width:1359px){
-                    padding: 17px 0 84px 35px;
+                @media(max-width:1439px){
+                    padding: 17px 0 70px 35px;
                 }
                 @media(max-width:1199px){
                     padding: 0;
@@ -736,6 +770,7 @@ footer{
                         max-width: 270px;
                         background: #F7D54D;
                         padding-bottom: 15px;
+                        padding-top: 17px;
                     }
                     @media(max-width:767px){
                         min-width: 119px;
@@ -756,7 +791,7 @@ footer{
                     font-weight: 600;
                     text-align: center;
                     line-height: 37px;
-                    margin: 0 auto 39px 49px;
+                    margin: 0 auto 33px 49px;
                     @media(max-width:1199px){
                         display: none;
                     }
@@ -765,9 +800,9 @@ footer{
                 .section-head,
                 .item-features ul li
                 {
-                    color: $white;
+                    color: #FBF9F2;
                     @media(max-width:1199px){
-                        color: unset;
+                        color: $black !important;
                     }
                 }
                 .item-features{
