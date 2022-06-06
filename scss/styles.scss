@@ -12,7 +12,7 @@ header{
     .logo{
         margin: 45px 0 0 58px;
         @media(max-width:767px){
-            margin: 45px 0 0 22px;
+            margin: 29px 0 0 22px;
         }
         span{
             &:first-of-type{
@@ -129,9 +129,12 @@ section.testimonials{
         }
         .testimonial-words{
             // flex: 2;
+            @media(max-width:991px){
+                margin: 0 auto;
+            }
             @media(max-width:575px){
                 max-width: 330px;
-                margin: 0 auto;
+                // margin: 0 auto;
             }
             .p-text{
                 max-width: 577px;
@@ -194,7 +197,7 @@ section.testimonials{
             //     padding-left: 74px;
             // }
             @media(max-width:991px){
-                margin-top: 58px;
+                margin: 58px auto 0 auto; 
             }
             @media(max-width:575px){
                 max-width: 294px;
@@ -202,13 +205,13 @@ section.testimonials{
         }       
     }
 }
-section.first-test{
-    .testimonial-in{
-        .testimonial-image{
-            // margin-left: 85px;
-        }
-    }
-}
+// section.first-test{
+//     .testimonial-in{
+//         .testimonial-image{
+//             // margin-left: 85px;
+//         }
+//     }
+// }
 section.second-test{
     padding: 120px 0 140px 0;
     .testimonial-in{
@@ -221,6 +224,44 @@ section.second-test{
 }
 section.thrid-test{
     background: #fff;
+}
+.book-display{
+    background: #B2DDE4;
+    padding: 52px 0 85px 0;
+    .book-image{
+        max-width: 547px;
+        max-height: 547px;
+        margin: 0 auto;
+        background: $white;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .book-text{
+        max-width: 507px;
+        margin: 36px auto 0 auto;
+        p{
+            font-size: 24px;
+            line-height: 48px;
+            text-align: center;
+            @media(max-width:575px){
+                font-size: 18px;
+                line-height: 36px;
+            }            
+        }
+    }
+    .bleat-btn{
+        margin: 25px auto 0 auto;
+        background: #212A42;
+        border-radius: 2px;
+        a{
+            display: block;
+            text-align: center;
+            line-height: 65px;
+            text-decoration: none;
+            color: $white;
+        }
+    }
+
 }
 footer{
     background: $fontcolor;
@@ -451,6 +492,7 @@ footer{
                     &:last-of-type{                        
                         overflow: hidden;
                         background: #fff;
+                        border-radius: 0 0 25px 25px;
                         @media(max-width:680px){
                             background: none    ;
                         }
@@ -528,6 +570,7 @@ footer{
                 max-width: unset;
                 min-width: unset;
                 box-shadow: none;
+                overflow: visible;
             }
             .price-box-in{
                 padding: 51px 0 43px 44px;
@@ -571,7 +614,7 @@ footer{
                             line-height: 28px;
                         }  
                         @media(max-width:399px){
-                            font-size: 12px;
+                            font-size: 10px;
                             line-height: 22px;
                         }                     
                     }
@@ -590,7 +633,7 @@ footer{
                             margin-top: 10px;
                         }  
                         @media(max-width:399px){
-                            font-size: 18px;
+                            font-size: 15px;
                             line-height: 22px;
                         }                      
                     }
@@ -809,7 +852,7 @@ footer{
                     margin-top: 32px;
                 }
                 button.bleat-btn{
-                    margin:59px auto 0 0;
+                    margin:48px auto 0 0;
                     display: block;
                     @media(max-width:1199px){
                         display: none;

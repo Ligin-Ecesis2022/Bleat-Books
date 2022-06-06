@@ -43,6 +43,10 @@ h1{
         font-size: 32px;
         line-height: 48px;        
     }
+    @media(max-width:380px){
+        font-size: 26px;
+        line-height: 35px;        
+    }
 }
 .section-head{
     font-size: 48px;
